@@ -40,3 +40,14 @@ Questions can also be fetched directly from a Google Sheet. Provide a service ac
 python sheets_summarize.py SHEET_ID "Sheet1!A:A" path/to/credentials.json
 ```
 This will read the specified column from the sheet, cluster the questions, and output representative topics generated with Gemini.
+
+## Google Apps Script Version
+For integration directly within Google Sheets, copy the `apps_script.gs` file into
+an Apps Script project bound to your spreadsheet. Set the script property
+`GEMINI_API_KEY` with your Gemini API key and reload the sheet. A new **Q&A Tools**
+menu will appear with a **Summarize Questions** item.
+
+When invoked, it reads all questions from column B, clusters them via Gemini
+embeddings, prioritizes clusters by size, and writes a summary with counts to a
+new sheet named `QA Summary`. A word frequency chart is also inserted for a quick
+visual overview of common terms.
