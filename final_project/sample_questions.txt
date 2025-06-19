@@ -1,0 +1,6 @@
+What is the difference between supervised and unsupervised learning?
+How do I choose the right evaluation metric for my model?
+Can you explain cross-validation?
+What is overfitting and how can we avoid it?
+How is unsupervised learning different from supervised?
+What are some common evaluation metrics for classification problems?
