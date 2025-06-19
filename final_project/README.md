@@ -40,3 +40,4 @@ Questions can also be fetched directly from a Google Sheet. Provide a service ac
 python sheets_summarize.py SHEET_ID "Sheet1!A:A" path/to/credentials.json
 ```
 This will read the specified column from the sheet, cluster the questions, and output representative topics generated with Gemini.
+
